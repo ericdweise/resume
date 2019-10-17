@@ -7,3 +7,8 @@
 
 # Compiled Python files
 *.pyc
+
+# latex Compilation Files
+*.aux
+*.log
+*.pdf
