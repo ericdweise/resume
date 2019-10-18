@@ -1,0 +1,61 @@
+\renewcommand{\section}[1]{%
+    \vspace{15pt}
+    {\Large \bf $\prec$ #1}\\
+    \vspace{-10pt}
+    % TODO: Add elastic space so not to have orphaned section title
+}
+
+\renewcommand{\subsection}[1]{%
+    \vspace{10pt}
+    {\bf\large #1}\\
+    % TODO: Add elastic space so not to have orphaned subsection title
+}
+
+\newcommand{\jobtitle}[4]{
+    % ARGUMENTS:
+    % 1 - Position
+    % 2 - Company
+    % 3 - Start Date
+    % 4 - End Date  TODO: Make the default be "Present"
+    \vspace{5pt}
+    {\bf #1} at #2 \hfill #3 -- #4 \\
+}
+
+\newcommand{\teachingposition}[4]{
+    % ARGUMENTS
+    % 1 - Position Title
+    % 2 - Class
+    % 3 - Organization
+    % 4 - Date
+    \vspace{5pt}
+    {\bf #1 } \\
+    {\it\small for} #2 {\it\small at } #3 {\it\small in } #4 \\
+}
+
+\newcommand{\teachingseminars}[3]{
+    % ARGUMENTS
+    % 1 - Course Name
+    % 2 - Institution
+    % 3 - Date
+    {\sl #1 } -- #2 \hfill #3\\
+}
+
+\newcommand{\mybook}[5]{
+    % ARGUMENTS
+    % 1 - Title
+    % 2 - Authors
+    % 3 - Publisher
+    % 4 - Publisher Address
+    % 5 - Copyright Year
+    {\sl #1}. #2. #3. #4. Copyright #5.\\
+}
+
+\newcommand{\mypaper}[5]{
+    % ARGUMENTS
+    % 1 - Title
+    % 2 - Authors
+    % 3 - Journal
+    % 4 - Page
+    % 5 - Publication Date
+    % 5 - Publication Date
+}
