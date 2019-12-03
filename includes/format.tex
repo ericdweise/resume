@@ -1,3 +1,6 @@
+\usepackage{ifthen}
+
+
 \renewcommand{\section}[1]{%
     \vspace{15pt}
     \hspace{15pt}
@@ -59,4 +62,13 @@
     % 4 - Page
     % 5 - Publication Date
     % 5 - Publication Date
+}
+
+\newcommand{\mydegree}[3]{
+    \vspace{5pt}
+    % \parbox[t]{\linewidth}{
+    \par
+        #1
+        \ifthenelse{\equal{#2}{}}{}{{\it -- GPA: #2}}
+        \hfill #3
 }
