@@ -2,7 +2,7 @@
 
 
 \renewcommand{\section}[1]{%
-    \vspace{15pt}
+    \vspace{10pt}
     \hspace{15pt}
     {\Large \bf #1}\\
     \vspace{-10pt}
@@ -10,7 +10,7 @@
 }
 
 \renewcommand{\subsection}[1]{%
-    \vspace{10pt}
+    \vspace{5pt}
     {\bf\large #1}\\
     % TODO: Add elastic space so not to have orphaned subsection title
 }
@@ -21,8 +21,10 @@
     % 2 - Company
     % 3 - Start Date
     % 4 - End Date  TODO: Make the default be "Present"
-    \vspace{5pt}
-    {\bf #1} at #2 \hfill #3 -- #4 \\
+    \vspace{2pt}
+    {\bf #1} 
+    \ifthenelse{\equal{#2}{}}{}{at} #2
+    \hfill #3 -- #4 \\
 }
 
 \newcommand{\teachingposition}[4]{
@@ -31,7 +33,7 @@
     % 2 - Class
     % 3 - Organization
     % 4 - Date
-    \vspace{5pt}
+    \vspace{2pt}
     {\bf #1 } \\
     {\it\small for} #2 {\it\small at } #3 \hfill #4 \\
 }
@@ -41,7 +43,7 @@
     % 1 - Course Name
     % 2 - Institution
     % 3 - Date
-    {\sl #1 } -- #2 \hfill #3\\
+    {\sl #1 } -- #2 \hfill #3
 }
 
 \newcommand{\mybook}[5]{
@@ -65,7 +67,7 @@
 }
 
 \newcommand{\mydegree}[3]{
-    \vspace{5pt}
+    \vspace{2pt}
     % \parbox[t]{\linewidth}{
     \par
         #1
