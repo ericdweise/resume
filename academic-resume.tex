@@ -1,0 +1,34 @@
+\documentclass{article}
+
+% TODO:
+% make \renewcommand{\subsection} reflect subsection format
+% add \renewcommand{\section}
+% Get rid of \setlength\parindent{0pt}
+
+% PACKAGES
+\usepackage[margin=0.5in]{geometry}
+
+% COMMANDS
+\input{includes/format.tex}
+
+% FORMAT
+\setlength{\parindent}{0pt} % Don't indent paragraphs
+\pagenumbering{gobble} % Suppress page numbering
+
+\begin{document}
+
+\input{sections/header.tex}
+
+\input{sections/education-gpa.tex}
+
+\input{sections/teaching.tex}
+
+\input{sections/presentations.tex}
+
+\input{sections/publications.tex}
+
+\input{sections/work-experience.tex}
+
+\input{sections/volunteer.tex}
+
+\end{document}
